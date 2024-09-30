@@ -12,7 +12,7 @@ export const Cover = ({
   children?: React.ReactNode;
   className?: string;
 }) => {
-  const [hovered, setHovered] = useState(false);
+  const hovered = true;
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -35,8 +35,6 @@ export const Cover = ({
 
   return (
     <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
       ref={ref}
       className="relative hover:bg-neutral-900  group/cover inline-block dark:bg-neutral-900 bg-neutral-100 px-2 py-2  transition duration-200 rounded-sm"
     >
@@ -69,7 +67,7 @@ export const Cover = ({
               <SparklesCore
                 background="transparent"
                 minSize={0.4}
-                maxSize={1}
+                maxSize={3}
                 particleDensity={500}
                 className="w-full h-full"
                 particleColor="#FFFFFF"
@@ -77,7 +75,7 @@ export const Cover = ({
               <SparklesCore
                 background="transparent"
                 minSize={0.4}
-                maxSize={1}
+                maxSize={5}
                 particleDensity={500}
                 className="w-full h-full"
                 particleColor="#FFFFFF"
@@ -131,7 +129,7 @@ export const Cover = ({
           }
         }}
         className={cn(
-          'dark:text-white inline-block text-neutral-900 relative z-20 group-hover/cover:text-white transition duration-200',
+          'text-tertiary inline-block relative z-20 group-hover/cover:text-tertiary transition duration-200',
           className
         )}
       >
