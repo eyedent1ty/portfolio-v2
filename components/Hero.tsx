@@ -5,7 +5,7 @@ import { AuroraBackground } from './ui/aurora-background';
 import { Cover } from './ui/cover';
 import { HoverBorderGradient } from './ui/hover-border-gradient';
 
-export function Hero() {
+export default function Hero() {
   return (
     <AuroraBackground>
       <motion.div
