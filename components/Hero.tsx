@@ -1,10 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import React from 'react';
 import { AuroraBackground } from './ui/aurora-background';
+import { FlipWords } from './ui/flip-words';
 
 export function Hero() {
+  const words = ['Innovative', 'Impactful', 'Seamless', 'Powerful'];
+
   return (
     <AuroraBackground>
       <motion.div
@@ -17,10 +19,11 @@ export function Hero() {
         }}
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
-        <div className="text-3xl md:text-7xl font-bold dark:text-white text-center max-w-[1000px] w-full">
-          Turning ideas into innovative seamless digital solutions
+        <div className="text-4xl md:text-7xl text-foreground font-bold text-center max-w-[1000px] w-full">
+          Turning ideas into <br />
+          <FlipWords words={words} />digital solutions
         </div>
-        <div className="font-extralight text-base md:text-2xl dark:text-neutral-200 py-4">
+        <div className="font-extralight text-foreground text-base md:text-2xl py-4">
           Hello, I&apos;m John Daniel, a full stack developer based in the
           Philippines.
         </div>
