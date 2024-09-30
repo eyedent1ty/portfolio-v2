@@ -6,7 +6,7 @@ export default function App() {
     <>
       <Navbar />
       <Hero />
-      <div className="h-screen"></div>
+      <div className="h-screen bg-secondary"></div>
     </>
   );
 }
