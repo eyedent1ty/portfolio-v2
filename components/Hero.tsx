@@ -2,12 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { AuroraBackground } from './ui/aurora-background';
-import { FlipWords } from './ui/flip-words';
 import { Cover } from './ui/cover';
+import { HoverBorderGradient } from './ui/hover-border-gradient';
 
 export function Hero() {
-  const words = ['Innovative', 'Impactful', 'Seamless', 'Powerful'];
-
   return (
     <AuroraBackground>
       <motion.div
@@ -22,13 +20,19 @@ export function Hero() {
       >
         <div className="text-4xl md:text-7xl text-foreground font-bold text-center max-w-[1000px] w-full">
           Turning ideas into <br />
-          {/* <FlipWords words={words} />digital solutions */}
           <Cover>Seamless</Cover> digital solutions
         </div>
         <div className="font-extralight text-foreground text-base md:text-2xl py-4">
           Hello, I&apos;m John Daniel, a full stack developer based in the
           Philippines.
         </div>
+        <HoverBorderGradient
+          containerClassName="rounded-lg"
+          as="button"
+          className="flex items-center space-x-2 text-base px-10 text-secondary font-bold"
+        >
+          <span>View my works</span>
+        </HoverBorderGradient>
       </motion.div>
     </AuroraBackground>
   );
