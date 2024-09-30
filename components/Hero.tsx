@@ -22,7 +22,7 @@ export function Hero() {
           Turning ideas into <br />
           <Cover>Seamless</Cover> digital solutions
         </div>
-        <div className="font-extralight text-foreground text-base md:text-2xl py-4">
+        <div className="font-extralight text-foreground text-base md:text-2xl py-4 px-10 text-center">
           Hello, I&apos;m John Daniel, a full stack developer based in the
           Philippines.
         </div>
