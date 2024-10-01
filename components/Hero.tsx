@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { AuroraBackground } from './ui/aurora-background';
 import { Cover } from './ui/cover';
-import { HoverBorderGradient } from './ui/hover-border-gradient';
+import { MagicButton } from './ui/magic-button';
 
 export default function Hero() {
   return (
@@ -26,13 +26,9 @@ export default function Hero() {
           Hello, I&apos;m John Daniel, a full stack developer based in the
           Philippines.
         </div>
-        <HoverBorderGradient
-          containerClassName="rounded-lg"
-          as="button"
-          className="flex items-center space-x-2 text-base px-10 text-secondary font-bold"
-        >
-          <span>View my works</span>
-        </HoverBorderGradient>
+        <MagicButton>
+          View my work
+        </MagicButton>
       </motion.div>
     </AuroraBackground>
   );
