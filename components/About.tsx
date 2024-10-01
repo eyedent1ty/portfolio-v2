@@ -65,10 +65,10 @@ export default function About() {
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 bg-quaternary min-h-[300px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="text-left space-y-4 h-full flex flex-col justify-center items-center">
-          <p className="text-3xl sm:text-4xl">
+          <div className="text-3xl sm:text-4xl">
             Let&apos;s build a<FlipWords words={flipWords} />
             <br /> application together!
-          </p>
+          </div>
         </div>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-quaternary min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
