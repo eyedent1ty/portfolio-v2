@@ -4,6 +4,7 @@ import { FlipWords } from './ui/flip-words';
 import { TypewriterEffect } from './ui/typewriter-effect';
 import { BackgroundLines } from './ui/background-lines';
 import { Highlight } from './ui/hero-hightlight';
+import { BackgroundGradientAnimation } from './ui/background-gradient-animation';
 
 export default function About() {
   const words = [
@@ -44,32 +45,32 @@ export default function About() {
 
   return (
     <div className="px-5 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
-      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-quaternary min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-        <div className="bg-quaternary h-full w-full rounded-lg flex justify-center items-center  sm:px-5">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-black min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        <BackgroundLines className="relative bg-black h-full w-full rounded-lg flex justify-center items-center  sm:px-5">
           <TypewriterEffect words={words} className="text-4xl" />
-        </div>
+        </BackgroundLines>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 bg-quaternary min-h-[300px] lg:min-h-[600px] xl:min-h-[300px]">
-        <div className="h-full w-full relative px-4 py-8 overflow-hidden rounded-2xl flex flex-col justify-center items-center">
+        <BackgroundGradientAnimation className="text-left space-y-4 h-full flex flex-col justify-center items-center">
+          <div className="text-3xl sm:text-4xl">
+            Let&apos;s build a<FlipWords words={flipWords} />
+            <br /> application together!
+          </div>
+        </BackgroundGradientAnimation>
+      </WobbleCard>
+      <WobbleCard containerClassName="col-span-1 bg-quaternary min-h-[300px] lg:min-h-[600px] xl:min-h-[300px]">
+        <BackgroundGradientAnimation className="h-full w-full relative px-4 py-8 overflow-hidden rounded-2xl flex flex-col justify-center items-center">
           <h1 className="text-3xl">
             Fueled by <span className="text-tertiary">curiosity</span>
           </h1>
 
-          <p className="font-normal text-base text-slate-500 mb-4 relative z-50 text-center">
+          <p className="font-normal text-base mb-4 relative z-50 text-center">
             I combine creativity with technology to deliver efficient and
             innovative solutions.
           </p>
 
           <Meteors number={20} />
-        </div>
-      </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 bg-quaternary min-h-[300px] lg:min-h-[600px] xl:min-h-[300px]">
-        <div className="text-left space-y-4 h-full flex flex-col justify-center items-center">
-          <div className="text-3xl sm:text-4xl">
-            Let&apos;s build a<FlipWords words={flipWords} />
-            <br /> application together!
-          </div>
-        </div>
+        </BackgroundGradientAnimation>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-quaternary min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="text-left space-y-4 h-full w-full flex">
