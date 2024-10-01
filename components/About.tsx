@@ -50,12 +50,12 @@ export default function About() {
         </div>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 bg-[#1d1c20] min-h-[300px] lg:min-h-[600px] xl:min-h-[300px]">
-        <div className="h-full w-full relative px-4 py-8 overflow-hidden rounded-2xl flex flex-col justify-center items-start">
+        <div className="h-full w-full relative px-4 py-8 overflow-hidden rounded-2xl flex flex-col justify-center items-center">
           <h1 className="text-3xl">
             Fueled by <span className="text-tertiary">curiosity</span>
           </h1>
 
-          <p className="font-normal text-base text-slate-500 mb-4 relative z-50">
+          <p className="font-normal text-base text-slate-500 mb-4 relative z-50 text-center">
             I combine creativity with technology to deliver efficient and
             innovative solutions.
           </p>
