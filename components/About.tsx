@@ -5,6 +5,7 @@ import { TypewriterEffect } from './ui/typewriter-effect';
 import { BackgroundLines } from './ui/background-lines';
 import { Highlight } from './ui/hero-hightlight';
 import { BackgroundGradientAnimation } from './ui/background-gradient-animation';
+import { BackgroundBeams } from './ui/background-beams';
 
 export default function About() {
   const words = [
@@ -74,13 +75,14 @@ export default function About() {
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-quaternary min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="text-left space-y-4 h-full w-full flex">
-          <BackgroundLines className="flex items-center justify-center w-full h-full flex-col px-4">
+          <div className="relative flex items-center justify-center w-full h-full flex-col px-4">
             <h2 className="text-4xl text-center">
               Delivering{' '}
               <Highlight>powerful, scalable, and tailored solutions</Highlight>{' '}
               to meet the needs of businesses of all sizes.
             </h2>
-          </BackgroundLines>
+            <BackgroundBeams />
+          </div>
         </div>
       </WobbleCard>
     </div>
