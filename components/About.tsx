@@ -44,12 +44,12 @@ export default function About() {
 
   return (
     <div className="px-5 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
-      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-[#1d1c20] min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-        <div className="bg-[#1d1c20] h-full w-full rounded-lg flex justify-center items-center  sm:px-5">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-quaternary min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+        <div className="bg-quaternary h-full w-full rounded-lg flex justify-center items-center  sm:px-5">
           <TypewriterEffect words={words} className="text-4xl" />
         </div>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 bg-[#1d1c20] min-h-[300px] lg:min-h-[600px] xl:min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 bg-quaternary min-h-[300px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="h-full w-full relative px-4 py-8 overflow-hidden rounded-2xl flex flex-col justify-center items-center">
           <h1 className="text-3xl">
             Fueled by <span className="text-tertiary">curiosity</span>
@@ -63,7 +63,7 @@ export default function About() {
           <Meteors number={20} />
         </div>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 bg-[#1d1c20] min-h-[300px] lg:min-h-[600px] xl:min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 bg-quaternary min-h-[300px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="text-left space-y-4 h-full flex flex-col justify-center items-center">
           <p className="text-3xl sm:text-4xl">
             Let&apos;s build a<FlipWords words={flipWords} />
@@ -71,7 +71,7 @@ export default function About() {
           </p>
         </div>
       </WobbleCard>
-      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-[#1d1c20] min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-quaternary min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <div className="text-left space-y-4 h-full w-full flex">
           <BackgroundLines className="flex items-center justify-center w-full h-full flex-col px-4">
             <h2 className="text-4xl text-center">

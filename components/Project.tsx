@@ -97,7 +97,7 @@ const products = [
 
 export default function Project() {
   return (
-    <section className="h-screen my-10">
+    <section className="min-h-screen my-10">
       <HeroParallax products={products} />
     </section>
   );
