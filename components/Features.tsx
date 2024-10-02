@@ -59,7 +59,7 @@ export default function FeaturesSectionDemo() {
     }
   ];
   return (
-    <section>
+    <section className="min-h-screen flex flex-col justify-center">
       <div className="text-4xl md:text-7xl text-foreground font-bold text-center">
         My <span className="text-tertiary">Features</span>
       </div>

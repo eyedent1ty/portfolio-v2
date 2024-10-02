@@ -4,6 +4,7 @@ import About from '@/components/About';
 import Project from '@/components/Project';
 import Experience from '@/components/Experience';
 import Features from '@/components/Features';
+import Approach from '@/components/Approach';
 import Footer from '@/components/Footer';
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <Project />
       <Experience />
       <Features />
+      <Approach />
       <Footer />
     </>
   );
