@@ -8,7 +8,6 @@ import {
   MotionValue
 } from 'framer-motion';
 import Image from 'next/image';
-import { Button } from './button';
 
 export const HeroParallax = ({
   projects
@@ -17,7 +16,6 @@ export const HeroParallax = ({
     title: string;
     image: string;
     link: { repository: string; live?: string };
-    thumbnail: string;
   }[];
 }) => {
   const firstRow = projects.slice(0, 5);
@@ -71,29 +69,29 @@ export const HeroParallax = ({
         className=""
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-          {firstRow.map((product) => (
-            <ProductCard
-              product={product}
+          {firstRow.map((project) => (
+            <ProjectCard
+              project={project}
               translate={translateX}
-              key={product.title}
+              key={project.title}
             />
           ))}
         </motion.div>
         <motion.div className="flex flex-row  mb-20 space-x-20 ">
-          {secondRow.map((product) => (
-            <ProductCard
-              product={product}
+          {secondRow.map((project) => (
+            <ProjectCard
+              project={project}
               translate={translateXReverse}
-              key={product.title}
+              key={project.title}
             />
           ))}
         </motion.div>
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map((product) => (
-            <ProductCard
-              product={product}
+          {thirdRow.map((project) => (
+            <ProjectCard
+              project={project}
               translate={translateX}
-              key={product.title}
+              key={project.title}
             />
           ))}
         </motion.div>
@@ -118,15 +116,14 @@ export const Header = () => {
   );
 };
 
-export const ProductCard = ({
-  product,
+export const ProjectCard = ({
+  project,
   translate
 }: {
-  product: {
+  project: {
     title: string;
     image: string;
     link: { repository: string; live?: string };
-    thumbnail: string;
   };
   translate: MotionValue<number>;
 }) => {
@@ -138,23 +135,23 @@ export const ProductCard = ({
       whileHover={{
         y: -20
       }}
-      key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      key={project.title}
+      className="group/project h-96 w-[30rem] relative flex-shrink-0"
     >
       <a
-        href={product.link.live ? product.link.live : product.link.repository}
+        href={project.link.live ? project.link.live : project.link.repository}
         target="_blank"
       >
         <Image
-          src={product.image}
+          src={project.image}
           height="600"
           width="600"
           className="object-cover object-center absolute h-full w-full inset-0"
-          alt={product.title}
+          alt={project.title}
         />
-        <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-        <div className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 flex items-center justify-between right-4 gap-5">
-          <h2 className="text-white">{product.title}</h2>
+        <div className="absolute inset-0 h-full w-full opacity-0 group-hover/project:opacity-80 bg-black pointer-events-none"></div>
+        <div className="absolute bottom-4 left-4 opacity-0 group-hover/project:opacity-100 flex items-center justify-between right-4 gap-5">
+          <h2 className="text-white">{project.title}</h2>
         </div>
       </a>
     </motion.div>
