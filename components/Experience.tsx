@@ -31,9 +31,12 @@ export default function Experience() {
                 height={64}
               />
               <div className="flex flex-col items-center lg:ms-5">
-                <h1 className="text-tertiary text-start text-xl font-bold md:text-2xl ">
+                <h1 className="text-tertiary text-center text-xl font-bold md:text-2xl ">
                   {work.title}
                 </h1>
+                <h2 className="text-center text-lg md:text-xl ">
+                  {work.company}
+                </h2>
                 <p className="text-primary mt-3 font-semibold">{work.desc}</p>
               </div>
             </div>
