@@ -1,3 +1,30 @@
+export const navItems = [
+  {
+    name: 'About',
+    link: '#about'
+  },
+  {
+    name: 'Projects',
+    link: '#projects'
+  },
+  {
+    name: 'Experience',
+    link: '#experience'
+  },
+  {
+    name: 'Expertise',
+    link: '#expertise'
+  },
+  {
+    name: 'Approach',
+    link: '#approach'
+  },
+  {
+    name: 'Contact',
+    link: '#contact'
+  }
+];
+
 export const projects = [
   {
     title: 'Kael Express (Ecommerce Site)',
@@ -196,6 +223,7 @@ export const approaches = [
   }
 ];
 
-export const email = 'delmontejohndaniel80@gmail.com'
+export const email = 'delmontejohndaniel80@gmail.com';
 export const githubUrl = 'https://github.com/eyedent1ty';
-export const linkedInUrl = 'https://www.linkedin.com/in/john-daniel-del-monte-183019236/';
+export const linkedInUrl =
+  'https://www.linkedin.com/in/john-daniel-del-monte-183019236/';
