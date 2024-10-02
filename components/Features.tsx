@@ -4,9 +4,17 @@ import Image from 'next/image';
 
 export default function Features() {
   return (
-    <section id="expertise" className="min-h-screen flex flex-col justify-center">
-      <div className="text-4xl md:text-7xl text-foreground font-bold text-center">
-        Your Project, <span className="text-tertiary">My Expertise</span>
+    <section
+      id="expertise"
+      className="min-h-screen flex flex-col justify-center py-16 px-5 lg:px-16"
+    >
+      <div className="sm:hidden text-4xl md:text-7xl text-foreground font-bold text-center flex flex-col">
+        <span>Your Project,</span>{' '}
+        <span className="text-tertiary">My Expertise</span>
+      </div>
+      <div className="hidden sm:block text-4xl md:text-7xl text-foreground font-bold text-center">
+        <span>Your Project,</span>{' '}
+        <span className="text-tertiary">My Expertise</span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
         {features.map((feature, index) => (
