@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Experience() {
   return (
-    <section className="min-h-screen py-16 px-5 lg:px-16">
+    <section id="experience" className="min-h-screen py-16 px-5 lg:px-16">
       <h2 className="text-4xl md:text-7xl text-foreground font-bold text-center">
         My <span className="text-tertiary">work experience</span>
       </h2>

@@ -5,7 +5,7 @@ import Project from '@/components/Project';
 import Experience from '@/components/Experience';
 import Features from '@/components/Features';
 import Approach from '@/components/Approach';
-import Footer from '@/components/Footer';
+import Contact from '@/components/Contact';
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
       <Experience />
       <Features />
       <Approach />
-      <Footer />
+      <Contact />
     </>
   );
 }

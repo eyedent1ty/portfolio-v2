@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Features() {
   return (
-    <section className="min-h-screen flex flex-col justify-center">
+    <section id="expertise" className="min-h-screen flex flex-col justify-center">
       <div className="text-4xl md:text-7xl text-foreground font-bold text-center">
         Your Project, <span className="text-tertiary">My Expertise</span>
       </div>
