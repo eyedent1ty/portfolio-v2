@@ -45,8 +45,11 @@ export default function About() {
   const flipWords = ['cute', 'beautiful', 'elegant'];
 
   return (
-    <section id="about" className="px-5 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
-      <WobbleCard containerClassName="col-span-1 lg:col-span-2 bg-black min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
+    <section
+      id="about"
+      className="px-5 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full"
+    >
+      <WobbleCard containerClassName="col-span-1 bg-quaternary lg:col-span-2 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
         <BackgroundLines className="relative bg-quaternary h-full w-full rounded-lg flex justify-center items-center  sm:px-5">
           <TypewriterEffect words={words} className="text-4xl" />
         </BackgroundLines>
