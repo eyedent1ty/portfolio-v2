@@ -26,9 +26,9 @@ export default function Hero() {
           Hello, I&apos;m John Daniel, a full stack developer based in the
           Philippines.
         </div>
-        <MagicButton>
-          View my work
-        </MagicButton>
+        <a href="#about">
+          <MagicButton>View my work</MagicButton>
+        </a>
       </motion.div>
     </AuroraBackground>
   );
