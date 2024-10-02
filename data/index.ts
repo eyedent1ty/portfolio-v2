@@ -43,11 +43,11 @@ export const projects = [
     }
   },
   {
-    title: 'Reminisce',
-    image: '/projects/project-4.png',
+    title: 'Advice Generator App',
+    image: '/projects/project-7.png',
     link: {
-      repository: 'https://github.com/eyedent1ty/reminisce',
-      live: 'https://reminisce-eyedent1ty.netlify.app/'
+      repository: 'https://github.com/eyedent1ty/advice-generator-app',
+      live: 'https://eyedent1ty-advice-generator-app.netlify.app/'
     }
   },
   {
@@ -59,27 +59,12 @@ export const projects = [
     }
   },
   {
-    title: 'Clipboard Landing Page',
-    image: '/projects/project-6.png',
+    title: 'Coding Bootcamp Testimonial',
+    image: '/projects/project-10.png',
     link: {
-      repository: 'https://github.com/eyedent1ty/clipboard-landing-page',
-      live: 'https://eyedent1ty-clipboard-landing-page.netlify.app/'
-    }
-  },
-  {
-    title: 'Advice Generator App',
-    image: '/projects/project-7.png',
-    link: {
-      repository: 'https://github.com/eyedent1ty/advice-generator-app',
-      live: 'https://eyedent1ty-advice-generator-app.netlify.app/'
-    }
-  },
-  {
-    title: 'Website Portfolio',
-    image: '/projects/project-8.png',
-    link: {
-      repository: 'https://github.com/eyedent1ty/portfolio',
-      live: ''
+      repository:
+        'https://github.com/eyedent1ty/coding-bootcamp-testimonials-slider',
+      live: 'https://eyedent1ty-coding-bootcamp-testimonials-slider.netlify.app/'
     }
   },
   {
@@ -91,12 +76,28 @@ export const projects = [
     }
   },
   {
-    title: 'Coding Bootcamp Testimonial',
-    image: '/projects/project-10.png',
+    title: 'Website Portfolio',
+    image: '/projects/project-8.png',
     link: {
-      repository:
-        'https://github.com/eyedent1ty/coding-bootcamp-testimonials-slider',
-      live: 'https://eyedent1ty-coding-bootcamp-testimonials-slider.netlify.app/'
+      repository: 'https://github.com/eyedent1ty/portfolio',
+      live: ''
+    }
+  },
+
+  {
+    title: 'Reminisce',
+    image: '/projects/project-4.png',
+    link: {
+      repository: 'https://github.com/eyedent1ty/reminisce',
+      live: 'https://reminisce-eyedent1ty.netlify.app/'
+    }
+  },
+  {
+    title: 'Clipboard Landing Page',
+    image: '/projects/project-6.png',
+    link: {
+      repository: 'https://github.com/eyedent1ty/clipboard-landing-page',
+      live: 'https://eyedent1ty-clipboard-landing-page.netlify.app/'
     }
   },
   {
