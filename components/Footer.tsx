@@ -3,6 +3,8 @@ import { MagicButton } from './ui/magic-button';
 
 import { IconBrandGithubFilled, IconBrandLinkedin } from '@tabler/icons-react';
 
+import { email, githubUrl, linkedInUrl } from '@/data';
+
 export default function Footer() {
   return (
     <div className="min-h-screen relative w-full rounded-md flex md:items-center md:justify-center  antialiased bg-grid-white/[0.02] relative overflow-hidden">
@@ -15,7 +17,9 @@ export default function Footer() {
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals
         </p>
-        <MagicButton>Let&apos;s get in touch</MagicButton>
+        <a href={`mailto:${email}`}>
+          <MagicButton>Let&apos;s get in touch</MagicButton>
+        </a>
       </div>
       <footer className="absolute bottom-4 flex flex-col-reverse gap-2 items-center left-4 right-4 sm:flex-row sm:justify-between">
         <p>
@@ -24,15 +28,12 @@ export default function Footer() {
         </p>
         <div className="flex gap-2">
           <Button className="p-2" variant="quaternary">
-            <a href="https://github.com/eyedent1ty" target="_blank">
+            <a href={githubUrl} target="_blank">
               <IconBrandGithubFilled color="#FACC15" />
             </a>
           </Button>
           <Button className="p-2" variant="quaternary">
-            <a
-              href="https://www.linkedin.com/in/john-daniel-del-monte-183019236/"
-              target="_blank"
-            >
+            <a href={linkedInUrl} target="_blank">
               <IconBrandLinkedin color="#FACC15" />
             </a>
           </Button>

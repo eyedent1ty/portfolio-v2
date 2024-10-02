@@ -195,3 +195,7 @@ export const approaches = [
       'After testing and refining, your project is ready to launch. I ensure a smooth deployment and provide ongoing support for any updates or adjustments needed post-launch.'
   }
 ];
+
+export const email = 'delmontejohndaniel80@gmail.com'
+export const githubUrl = 'https://github.com/eyedent1ty';
+export const linkedInUrl = 'https://www.linkedin.com/in/john-daniel-del-monte-183019236/';
