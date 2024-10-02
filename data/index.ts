@@ -2,15 +2,15 @@ export const workExperience = [
   {
     id: 1,
     title: 'Freelance Software Developer',
-    desc: 'Designed and developed mobile app for both iOS & Android platforms using React Native.',
-    className: 'md:col-span-2', // change to md:col-span-2
+    desc: 'Engineered user-friendly web applications using modern JavaScript frameworks, primarily React, enhancing client satisfaction through tailored solutions.',
+    className: 'md:col-span-2',
     thumbnail: '/exp2.svg'
   },
   {
     id: 2,
     title: 'Frontend Developer Intern',
     company: 'Pixel8 Web Solutions & Consultancy Inc',
-    desc: 'Assisted in the development of a web-based platform using React.js, enhancing interactivity.',
+    desc: 'Contributed to the development of engaging user interfaces while collaborating with a cross-functional team. Led daily stand-ups, ensuring alignment and timely project delivery.',
     className: 'md:col-span-2',
     thumbnail: '/exp1.svg'
   },
@@ -18,15 +18,15 @@ export const workExperience = [
     id: 3,
     title: 'Frontend Developer Intern',
     company: 'Gleent Incorporated',
-    desc: 'Led the dev of a mobile app for a client, from initial concept to deployment on app stores.',
-    className: 'md:col-span-2', // change to md:col-span-2
+    desc: 'Gained hands-on experience in building responsive web pages using HTML, CSS, and JavaScript, while participating in collaborative team projects.',
+    className: 'md:col-span-2',
     thumbnail: '/exp3.svg'
   },
   {
     id: 4,
     title: 'Computer Programmer',
     company: 'Yazaki Torres Manufacturing Inc.',
-    desc: 'Developed and maintained user-facing features using modern frontend technologies.',
+    desc: 'Developed efficient payroll software using C++, streamlining payroll processes and enhancing accuracy in financial operations for the company.',
     className: 'md:col-span-2',
     thumbnail: '/exp4.svg'
   }
