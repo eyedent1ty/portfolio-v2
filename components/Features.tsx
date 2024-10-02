@@ -1,11 +1,12 @@
 import { cn } from '@/lib/utils';
 import { features } from '@/data';
+import Image from 'next/image';
 
 export default function Features() {
   return (
     <section className="min-h-screen flex flex-col justify-center">
       <div className="text-4xl md:text-7xl text-foreground font-bold text-center">
-        My <span className="text-tertiary">Features</span>
+        Your Project, <span className="text-tertiary">My Expertise</span>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
         {features.map((feature, index) => (
@@ -24,7 +25,7 @@ const Feature = ({
 }: {
   title: string;
   description: string;
-  icon: React.ReactNode;
+  icon: string;
   index: number;
 }) => {
   return (
@@ -41,8 +42,8 @@ const Feature = ({
       {index >= 4 && (
         <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
       )}
-      <div className="mb-4 relative z-10 px-10 text-neutral-600 dark:text-neutral-400">
-        {icon}
+      <div className="mb-4 relative z-10 px-10">
+        <Image src={icon} alt={title} width={24} height={24} />
       </div>
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
         <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-tertiary transition-all duration-200 origin-center" />

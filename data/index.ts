@@ -1,14 +1,3 @@
-import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2
-} from '@tabler/icons-react';
-
 export const workExperience = [
   {
     id: 1,
@@ -45,47 +34,51 @@ export const workExperience = [
 
 export const features = [
   {
-    title: 'Built for developers',
+    title: 'Responsive Design',
     description:
-      'Built for engineers, developers, dreamers, thinkers and doers.',
-    icon: <IconTerminal2 />
+      'Your website will look flawless on all devices, ensuring a seamless experience across desktops, tablets, and phones.',
+    icon: '/perspective.svg'
   },
   {
-    title: 'Ease of use',
+    title: 'Fast Performance',
     description:
-      "It's as easy as using an Apple, and as expensive as buying one.",
-    icon: <IconEaseInOut />
-  },
+      'I optimize websites for speed and performance, ensuring users never have to wait, improving both SEO and user satisfaction.',
+    icon: '/performance.svg'
+    },
   {
-    title: 'Pricing like no other',
+    title: 'Clean & Scalable Code',
     description:
-      'Our prices are best in the market. No cap, no lock, no credit card required.',
-    icon: <IconCurrencyDollar />
-  },
+      'I write maintainable, scalable, and efficient code that can be easily built upon, making future development simpler and cost-effective.',
+    icon: '/scalable.svg'
+    },
   {
-    title: '100% Uptime guarantee',
-    description: 'We just cannot be taken down by anyone.',
-    icon: <IconCloud />
-  },
-  {
-    title: 'Multi-tenant Architecture',
-    description: 'You can simply share passwords instead of buying new seats',
-    icon: <IconRouteAltLeft />
-  },
-  {
-    title: '24/7 Customer Support',
+    title: 'Full-Stack Expertise',
     description:
-      'We are available a 100% of the time. Atleast our AI Agents are.',
-    icon: <IconHelp />
+      'From frontend interfaces to backend databases, I have the skills to build complete solutions that are reliable and secure.',
+      icon: '/fullstack.svg'
   },
   {
-    title: 'Money back guarantee',
-    description: 'If you donot like EveryAI, we will convince you to like us.',
-    icon: <IconAdjustmentsBolt />
+    title: 'User-Centric Approach',
+    description:
+      'I focus on creating intuitive and user-friendly interfaces that enhance user engagement and drive conversions.',
+      icon: 'user-centric.svg'
   },
   {
-    title: 'And everything else',
-    description: 'I just ran out of copy ideas. Accept my sincere apologies',
-    icon: <IconHeart />
+    title: 'Continuous Communication',
+    description:
+      'I believe in transparent and open communication throughout the project lifecycle, keeping you in the loop every step of the way.',
+      icon: '/communication.svg'
+  },
+  {
+    title: 'Version Control & Collaboration',
+    description:
+      'Proficient with Git and collaborative workflows, ensuring smooth teamwork and efficient project management.',
+      icon: '/version-control.svg'
+  },
+  {
+    title: 'On-Time Delivery',
+    description:
+      'I deliver projects on time, ensuring you can launch your website or app according to your schedule and without unnecessary delays.',
+      icon: '/on-time-delivery.svg'
   }
 ];
