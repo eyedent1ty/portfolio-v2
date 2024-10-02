@@ -42,7 +42,7 @@ export default function About() {
     }
   ];
 
-  const flipWords = ['cute', 'beautiful', 'elegant'];
+  const flipWords = ['dynamic', 'beautiful', 'modern'];
 
   return (
     <section
