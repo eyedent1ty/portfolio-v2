@@ -3,6 +3,8 @@
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
+import { approaches } from '@/data';
+
 import { CanvasRevealEffect } from './ui/canvas-reveal-effect';
 
 const Approach = () => {
@@ -12,48 +14,25 @@ const Approach = () => {
         My <span className="text-tertiary">approach</span>
       </h2>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
-        <Card
-          title="Planning & Strategy"
-          icon={<h2 className="text-4xl text-tertiary font-bold">Stage 1</h2>}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-tertiary rounded-3xl overflow-hidden"
-            colors={[[255, 255, 255]]}
-            dotSize={2}
-          />
-        </Card>
-        <Card
-          title="Development & Progress Update"
-          icon={<h2 className="text-4xl text-tertiary font-bold">Stage 2</h2>}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-tertiary rounded-3xl overflow-hidden"
-            colors={[[255, 255, 255]]}
-            dotSize={2}
-          />
-        </Card>
-        <Card
-          title="Development & Launch"
-          icon={<h2 className="text-4xl text-tertiary font-bold">Stage 3</h2>}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-tertiary rounded-3xl overflow-hidden"
-            colors={[[255, 255, 255]]}
-            dotSize={2}
-          />
-        </Card>
+        {approaches.map((approach) => (
+          <Card
+            key={approach.id}
+            title={approach.title}
+            icon={
+              <h2 className="text-4xl text-tertiary font-bold">
+                Stage {approach.id}
+              </h2>
+            }
+            description={approach.description}
+          >
+            <CanvasRevealEffect
+              animationSpeed={3}
+              containerClassName="bg-tertiary rounded-3xl overflow-hidden"
+              colors={[[255, 255, 255]]}
+              dotSize={2}
+            />
+          </Card>
+        ))}
       </div>
     </section>
   );
@@ -65,12 +44,12 @@ const Card = ({
   title,
   icon,
   children,
-  des
+  description
 }: {
   title: string;
   icon: React.ReactNode;
   children?: React.ReactNode;
-  des: string;
+  description: string;
 }) => {
   const [hovered, setHovered] = React.useState(false);
   return (
@@ -117,7 +96,7 @@ const Card = ({
          group-hover/canvas-card:-translate-y-2 transition duration-200"
           style={{ color: '#E4ECFF' }}
         >
-          {des}
+          {description}
         </p>
       </div>
     </div>
