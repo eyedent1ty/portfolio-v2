@@ -1,3 +1,95 @@
+export const projects = [
+  {
+    title: 'Kael Express (Ecommerce Site)',
+    image: '/projects/project-2.png',
+    link: {
+      repository: 'https://github.com/eyedent1ty/kael-express',
+      live: 'https://kael-express.netlify.app/'
+    }
+  },
+  {
+    title: 'Trucking Management System for Ro-Ed Logistics and Services',
+    image: '/projects/project-1.png',
+    link: {
+      repository: 'https://github.com/Jolayus/softeng-group-10',
+      live: ''
+    }
+  },
+  {
+    title: 'Reminisce',
+    image: '/projects/project-4.png',
+    link: {
+      repository: 'https://github.com/eyedent1ty/reminisce',
+      live: 'https://reminisce-eyedent1ty.netlify.app/'
+    }
+  },
+  {
+    title: 'Sunnyside Agency Landing Page',
+    image: '/projects/project-5.png',
+    link: {
+      repository: 'https://github.com/eyedent1ty/sunnyside-agency-landing-page',
+      live: 'https://eyedent1ty-sunnyside-agency-landing-page.netlify.app/'
+    }
+  },
+  {
+    title: 'Clipboard Landing Page',
+    image: '/projects/project-6.png',
+    link: {
+      repository: 'https://github.com/eyedent1ty/clipboard-landing-page',
+      live: 'https://eyedent1ty-clipboard-landing-page.netlify.app/'
+    }
+  },
+  {
+    title: 'Advice Generator App',
+    image: '/projects/project-7.png',
+    link: {
+      repository: 'https://github.com/eyedent1ty/advice-generator-app',
+      live: 'https://eyedent1ty-advice-generator-app.netlify.app/'
+    }
+  },
+  {
+    title: 'Website Portfolio',
+    image: '/projects/project-8.png',
+    link: {
+      repository: 'https://github.com/eyedent1ty/portfolio',
+      live: ''
+    }
+  },
+  {
+    title: 'Robofriends',
+    image: '/projects/project-9.png',
+    link: {
+      repository: 'https://github.com/eyedent1ty/robofriends',
+      live: 'https://eyedent1ty-robofriends.netlify.app/'
+    }
+  },
+  {
+    title: 'Coding Bootcamp Testimonial',
+    image: '/projects/project-10.png',
+    link: {
+      repository:
+        'https://github.com/eyedent1ty/coding-bootcamp-testimonials-slider',
+      live: 'https://eyedent1ty-coding-bootcamp-testimonials-slider.netlify.app/'
+    }
+  },
+  {
+    title: 'Ping Coming Soon',
+    image: '/projects/project-11.png',
+    link: {
+      repository: 'https://github.com/eyedent1ty/ping-coming-soon',
+      live: 'https://eyedent1ty-ping-coming-soon.netlify.app/'
+    }
+  },
+  {
+    title: 'Landing Page for Ro-Ed Logistics and Services',
+    image: '/projects/project-3.png',
+    link: {
+      repository: 'https://github.com/eyedent1ty/tms-roed-landing-page',
+      live: ''
+    }
+  }
+];
+
 export const workExperience = [
   {
     id: 1,

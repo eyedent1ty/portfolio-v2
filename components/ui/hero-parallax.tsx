@@ -1,31 +1,32 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 import {
   motion,
   useScroll,
   useTransform,
   useSpring,
-  MotionValue,
-} from "framer-motion";
-import Image from "next/image";
-import Link from "next/link";
+  MotionValue
+} from 'framer-motion';
+import Image from 'next/image';
+import { Button } from './button';
 
 export const HeroParallax = ({
-  products,
+  projects
 }: {
-  products: {
+  projects: {
     title: string;
-    link: string;
+    image: string;
+    link: { repository: string; live?: string };
     thumbnail: string;
   }[];
 }) => {
-  const firstRow = products.slice(0, 5);
-  const secondRow = products.slice(5, 10);
-  const thirdRow = products.slice(10, 15);
+  const firstRow = projects.slice(0, 5);
+  const secondRow = projects.slice(5, 10);
+  const thirdRow = projects.slice(10, 15);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end start"],
+    offset: ['start start', 'end start']
   });
 
   const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
@@ -65,7 +66,7 @@ export const HeroParallax = ({
           rotateX,
           rotateZ,
           translateY,
-          opacity,
+          opacity
         }}
         className=""
       >
@@ -105,12 +106,13 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        A small selection <br /> of <span className="text-tertiary">recent projects</span>
+        A small selection <br /> of{' '}
+        <span className="text-tertiary">recent projects</span>
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
+        We build beautiful projects with the latest technologies and frameworks.
         We are a team of passionate developers and designers that love to build
-        amazing products.
+        amazing projects.
       </p>
     </div>
   );
@@ -118,11 +120,12 @@ export const Header = () => {
 
 export const ProductCard = ({
   product,
-  translate,
+  translate
 }: {
   product: {
     title: string;
-    link: string;
+    image: string;
+    link: { repository: string; live?: string };
     thumbnail: string;
   };
   translate: MotionValue<number>;
@@ -130,30 +133,30 @@ export const ProductCard = ({
   return (
     <motion.div
       style={{
-        x: translate,
+        x: translate
       }}
       whileHover={{
-        y: -20,
+        y: -20
       }}
       key={product.title}
       className="group/product h-96 w-[30rem] relative flex-shrink-0"
     >
-      <Link
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
+      <a
+        href={product.link.live ? product.link.live : product.link.repository}
+        target="_blank"
       >
         <Image
-          src={product.thumbnail}
+          src={product.image}
           height="600"
           width="600"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+          className="object-cover object-center absolute h-full w-full inset-0"
           alt={product.title}
         />
-      </Link>
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        {product.title}
-      </h2>
+        <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
+        <div className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 flex items-center justify-between right-4 gap-5">
+          <h2 className="text-white">{product.title}</h2>
+        </div>
+      </a>
     </motion.div>
   );
 };
