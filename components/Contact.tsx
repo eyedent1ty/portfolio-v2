@@ -7,7 +7,7 @@ import { email, githubUrl, linkedInUrl } from '@/data';
 
 export default function Contact() {
   return (
-    <section id="contact" className="min-h-screen w-full rounded-md flex items-center justify-center  antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <section id="contact" className="min-h-screen max-w-7xl mx-auto w-full rounded-md flex items-center justify-center  antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <div className="flex flex-col items-center justify-center gap-5 p-4 mx-auto relative z-10  w-full pt-20 max-w-[1000px] md:pt-0">
         <h1 className="text-4xl md:text-7xl font-bold text-center">
           Ready to take <span className="text-tertiary">your</span> digital

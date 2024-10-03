@@ -9,7 +9,10 @@ import { CanvasRevealEffect } from './ui/canvas-reveal-effect';
 
 const Approach = () => {
   return (
-    <section id="approach" className="min-h-full flex flex-col justify-center py-16 px-5 lg:px-16">
+    <section
+      id="approach"
+      className="min-h-full flex flex-col justify-center py-16 max-w-7xl mx-auto w-full"
+    >
       <h2 className="text-4xl md:text-7xl text-foreground font-bold text-center">
         My <span className="text-tertiary">approach</span>
       </h2>
