@@ -108,9 +108,9 @@ export const Header = () => {
         <span className="text-tertiary">recent projects</span>
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful projects with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing projects.
+        I create stunning projects using the latest technologies and frameworks.
+        As a passionate developer, I take pride in bringing amazing ideas to
+        life.
       </p>
     </div>
   );
